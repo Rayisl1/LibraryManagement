@@ -1,55 +1,69 @@
-📚 Library Management System (Java)
-📌 Project Overview
-This project is a simple Library Management System implemented in Java.
-It was created as part of Assignment 1 to demonstrate basic Object-Oriented Programming (OOP) concepts such as classes, objects, constructors, methods, encapsulation, and object comparison.
-🎯 Objectives
-Practice object-oriented programming in Java
-Create multiple related classes
-Use constructors, methods, getters, and setters
-Create objects in the main method
-Output object information to the console
-Compare objects using the equals() method
-🧩 Project Structure
+# 📚 Library Management System (Java)
+
+## 📌 Project Overview
+This project is a simple **Library Management System** implemented in **Java**.  
+It was created as part of **Assignment 1** to demonstrate basic **Object-Oriented Programming (OOP)** concepts such as classes, objects, constructors, methods, encapsulation, and object comparison.
+
+---
+
+## 🎯 Objectives
+- Practice object-oriented programming in Java
+- Create multiple related classes
+- Use constructors, methods, getters, and setters
+- Create objects in the `main` method
+- Output object information to the console
+- Compare objects using the `equals()` method
+
+---
+
+## 🧩 Project Structure
+```text
 LibraryManagement/
- └── src/
-     ├── Book.java
-     ├── LibraryMember.java
-     ├── Library.java
-     └── Main.java
+└── src/
+    ├── Book.java
+    ├── LibraryMember.java
+    ├── Library.java
+    └── Main.java
+
 🏗️ Classes Description
 📘 Book
 Represents a book in the library.
-Attributes: title, author, year
+Attributes:
+title
+author
+year
 Methods:
 Constructor
-equals() for comparing books
-toString() for displaying book information
+equals() — compares books
+toString() — displays book information
 👤 LibraryMember
 Represents a library member.
-Attributes: name, id
+Attributes:
+name
+id
 Methods:
 Constructor
-toString() for displaying member information
+toString() — displays member information
 🏛️ Library
-Represents the library itself.
-Attributes: name, book, member
+Represents the library.
+Attributes:
+name
+book
+member
 Methods:
 Constructor
-displayInfo() to print library details
+displayInfo() — prints library details
 ▶ Main
 Entry point of the program.
-Creates objects of Book, LibraryMember, and Library
-Displays information in the console
-Compares two book objects using equals()
+Responsibilities:
+Creates objects of all classes
+Outputs information to the console
+Compares book objects using equals()
 ▶️ How to Run the Project
 Open the project in IntelliJ IDEA
-Make sure JDK (17 or higher) is installed and selected
+Make sure JDK 17 or higher is installed
 Open Main.java
-Click the green ▶ button next to main()
-or use:
-Mac: Ctrl + R
-Windows: Shift + F10
-📤 Sample Output
+Click the green ▶ button near main()
 Library: AITU Library
 Clean Code by Robert Martin (2008)
 Member: Nurislam, ID: 101
