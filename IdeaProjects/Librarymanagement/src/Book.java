@@ -9,9 +9,7 @@ public class Book {
         this.year = year;
     }
 
-    public String getTitle() {
-        return title;
-    }
+    public String getTitle() {return title;}
 
     public String getAuthor() {
         return author;
@@ -33,15 +31,15 @@ public class Book {
         this.year = year;
     }
 
-    @Override
     public boolean equals(Object obj) {
-        if (this == obj) return true;
-        if (!(obj instanceof Book)) return false;
+//        if (this == obj) return true;
+//        if (!(obj instanceof Book)) return false;
         Book other = (Book) obj;
-        return title.equals(other.title) && author.equals(other.author);
+//        return title.equals(other.title) && author.equals(other.author);
+        if (this.title == other.title && this.author == other.author ) return true;
+        return false;
     }
 
-    @Override
     public String toString() {
         return "Book{title='" + title + "', author='" + author + "', year=" + year + "}";
     }
